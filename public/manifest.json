@@ -1,0 +1,62 @@
+{
+    "short_name": "Devilon",
+    "name": "Devilon",
+    "description": "A PWA(blog) for young techies to learn more about Full stack JavaScript and Python.",
+    "icons": [
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/100.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/196.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/256.png",
+            "type": "image/png",
+            "sizes": "284x284"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "./AppIcons (1)/Assets.xcassets/AppIcon.appiconset/maskable.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#b01100"
+}

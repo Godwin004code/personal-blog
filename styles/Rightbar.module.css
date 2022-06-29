@@ -1,0 +1,25 @@
+
+.rightbar_container {
+    font-size: 1rem;
+    background-color: white;
+    width: 150px;
+    padding-bottom: .5rem;
+    color: var(--tertiary);
+    padding: .5rem .7rem;
+    text-align: center;
+}
+.rightbar_container a {
+    color: var(--tertiary);
+}
+.rightbar_container h2 {
+    font-size: 1rem;
+    color: var(--tertiary);
+    text-align: center;
+    padding-bottom: .5rem;
+}
+.rightbar_container img {
+    width: 70px;
+}
+.rightbar_container p {
+    word-break: break-all;
+}

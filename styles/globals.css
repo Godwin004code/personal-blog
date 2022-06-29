@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gentium Plus', serif;
+    overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;margin: 0;
+}
+
+body.dark {
+  background-color: var(--tertiary);
+}
+body.dark #post, body.dark #learn_box {
+  background-color: var(--primary);
+  color: var(--main);
+}
+body.dark #category {
+  background-color: var(--main);
+}
+body.dark #category:hover {
+  color: var(--main);
+  background-color: var(--tertiary);
+}
+body.dark #author {
+  border-bottom: 1px solid var(--main);
+}
+body.dark #main, body.dark .h2, body.dark #title, body.dark #long_link, body.dark #long_link a {
+  color: var(--main);
+}
+body.light #long_link {
+  color: var(--tertiary);
+}
+body.light #long_link a {
+  color: var(--tertiary);
+}
+body.light #author {
+  border-bottom: 1px solid var(--tertiary);
+}
+body.light #category{
+  background-color: var(--tertiary);
+  color: var(--main);
+}
+body.light #post, body.light #learn_box {
+  background-color: white;
+  box-shadow: rgb(33 33 52 / 10%) 0px 1px 4px;
+  color: var(--tertiary);
+}
+body.light {
+  background-color: var(--main);
+}
+body.light .sun {
+  display: none;
+}
+body.light .moon{
+  display: block;
+}
+body.dark .moon {
+  display: none;
+}
+body.dark .sun {
+  display: block;
+}
+body.dark #contact {
+  color: white;
+}
+body.light #contact {
+  color: var(--tertiary);
+}
+:root {
+  --primary: rgb(33, 33, 52);
+  --secondary: #b01100;
+  --tertiary: rgb(24, 24, 38);
+  --main: rgb(246, 246, 249);;
+  --black: #000;
+  --nursery: #b06b63;
+}
+.mobile_nav {
+  display: none;
+}
+.progress_container {
+  width: 100%;
+  height: 10px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+}
+.progress_line {
+  height: 10px;
+  background-color: var(--secondary);
+}
+
+#tabh2 {
+  color: white;
+        cursor: pointer;
+        background-color: var(--secondary);
+        padding: 15px 20px;
+        
+    border-bottom: 1px solid wheat;
+}
+
+#tabh2#activetab {
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  color: #b01100;
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  
+  box-shadow: rgb(33, 33, 52 ,10%) 10px 10px 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg,  var(--tertiary),var(--secondary));
+  border-radius: 5px;
+  height: 100px;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, .2),
+            inset -4px -4px 6px -1px rgba(255, 255, 255, .7),
+            -0.5px 0.5px 0px rgba(255, 255, 255, 1),
+            .5px .5px 0 rgba(0, 0, 0, .15),
+            0 12px 10px -10px rgba(0, 0, 0, .05);
+}
+
+@media only screen and (max-width: 660px) {
+  #tabh2 {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  .progress_container {
+    width: 100%;
+  }
+  #toggle_mode {
+    display: none;
+  }
+.mobile_nav {
+  display: block;
+  position: absolute;
+  background-color: var(--main);
+
+  z-index: 100;
+  transform: translateY(-200%);
+  transition: transform ease 500ms; 
+  left: 5%;
+  right: 5%;
+  box-shadow: rgb(33 33 52 / 10%) 0px 1px 4px;
+}
+
+.mobile_nav.active {
+   transform: translateY(0%);
+   transition: transform ease 1000ms;  
+  background-color: var(--main);
+  box-shadow: rgb(33 33 52 / 10%) 0px 1px 4px;
+  position: absolute;
+
+}
+.mobile_nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   list-style-type: none;
+   padding: 1.4rem 0;
+}
+.mobile_nav li {
+   
+   list-style: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 0;
+     
+    padding: 10px;
+    
+    border-radius: 7px;
+    transition: all .5s ease;
+}
+.mobile_nav li:hover {
+  background-color: var(--secondary);
+  box-shadow: -1px 8px 6px -6px var(--nursery);
+  color: white;
+}
+#odd:hover {
+  background-color: initial;
+  color: var(--tertiary);
+  box-shadow: initial;
+}
+.remove {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+}
+#toogle_mode {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 20px;
+}
+}

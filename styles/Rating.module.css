@@ -1,0 +1,40 @@
+
+
+.rating_container {
+    width: 50%;
+    margin: 2rem auto;
+}
+.rating_container li {
+    margin-bottom: 0rem;
+}
+.rating_container a {
+    text-decoration: underline;
+    font-size: 20px;
+}
+.rating_box {
+    margin-bottom: 1rem;
+}
+
+.rating_container h2 {
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
+@media only screen and (max-width:1000px) {
+    .rating_container {
+        width: 60%;
+        margin: 0;
+        margin-left: 6rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .rating_container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .rating_container a {
+        text-align: left;
+    }
+}

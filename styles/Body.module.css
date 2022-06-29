@@ -1,0 +1,157 @@
+.body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftbar {
+    width: 30%;
+    position: fixed;
+    margin-left: 10px;
+}
+
+.rightbar {
+  width: 18%;
+  position: fixed;
+  right: 0%;
+ 
+}
+
+.main,.mains,.maines {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 25%;
+}
+
+.mains {
+    width: 80%;
+    left: 10%;
+}
+.footer {
+    background: linear-gradient(270deg,#b01100,#e4230f);
+    color: white;
+    z-index: 100000;
+    margin-top: 4rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* 59ff4d 
+003109 */
+.btn1 {
+    padding: .5rem .7rem;
+    margin-left: 10px;
+    border-radius: 6px;
+    border: 0;
+    background: linear-gradient(270deg,#b01100,#e4230f);
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 1.4rem;
+}
+.btn1:hover {
+    background-color: #b01100;
+}
+.challenge {
+    margin: 0 auto;
+    width: 50%;
+}
+@media only screen and (max-width: 1200px) {
+    .leftbar {
+        left: 4%;
+    }
+    .rightbar {
+        right: 5%;
+    }
+   
+}
+
+@media only screen and (max-width: 1000px) {
+    .leftbar {
+        display: none;
+        position: initial;
+        
+    }
+    .rightbar {
+        width: 20%;
+        right: 5%;
+    }
+    .main, .maines {
+        width: 60%;
+        left: 10%;
+       
+    }
+    .mains {
+        width: 80%;
+        left: 10%;
+       
+    }
+    .challenge {
+        display: block;
+        width: 60%;
+       margin: 0;
+       margin-left: 6rem;
+    }
+    .footer {
+        z-index: 19;
+    }
+    .btn1 {
+        margin-bottom: 1rem;
+    }  
+}
+
+@media only screen and (max-width: 800px) {
+    .leftbar {
+        display: none;
+        position: initial;
+    }
+    .btn1 {
+       margin-bottom: 1rem;
+        font-size: .8rem;
+    }
+    .main,.mains,.maines {
+        position: initial;
+        width: 90%;
+        margin: 2rem auto;
+        
+    }
+    .maines {
+        margin-top: 0;
+    }
+    .challenge {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .rightbar{
+        position: initial;
+        display: none;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .head {
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+    .btn1 {
+        margin-top: 7rem;
+        margin-bottom: 0rem;
+    }
+    .main, .mains {
+        margin-top: 2rem;
+    }
+} 
+@media only screen and (max-width: 500px) {
+    .main, .mains {
+        width: 95%;
+        position: initial;
+        margin: 2rem auto;
+        
+        
+    }
+    
+    
+}

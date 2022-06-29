@@ -1,0 +1,23 @@
+.challenge_container {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    box-shadow: rgb(33 33 52 / 10%) 0px 1px 4px;
+    display: flex;
+}
+
+.headers {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+}
+
+.challenge_container p {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.challenge_container span {
+    font-weight: 700;
+}
