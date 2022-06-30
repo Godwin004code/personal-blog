@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function () {
         OneSignal.init({
-          appId: "b40b7cc7-13dc-4662-8b48-efa668f9b72a",
+          appId: "bbf6acad-d4ad-4fee-9df5-d4e3f554f02f",
             notifyButton: {
                 enable: true,
             },
