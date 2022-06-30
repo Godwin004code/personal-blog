@@ -21,22 +21,18 @@ const SinglePost = ({
 }) => {
   return (
     <>
-      <Head>
-        <meta name="description" content={excerpt} />
-        <meta name="theme-color" content="#b01100" />
-        <title>{title}</title>
-      </Head>
+      
       <Nav />
 
       <div id="long_link" className={_styles.long_link}>
         <Link href="/">
           <a>
-            Home <span>&raquo;</span>
+          <span style={{color: 'blue'}}>Home</span> <span>&raquo;</span>
           </a>
         </Link>{" "}
         <Link href={`/category/${category}`}>
           <a>
-            {category} <span>&raquo;</span>
+          <span style={{color: 'blue'}}> {category}</span> <span>&raquo;</span>
           </a>
         </Link>{" "}
         <a>{title}</a>

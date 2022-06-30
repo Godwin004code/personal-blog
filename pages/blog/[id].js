@@ -28,7 +28,7 @@ const Shock = ({ data, paths }) => {
   const date = new Date(post.createdAt);
   const time = date.toLocaleTimeString();
   const _date = date.toLocaleDateString();
-  const updated = new Date(post.createdAt);
+  const updated = new Date(post.updatedAt);
 
   const UpdatedDate = updated.toLocaleDateString();
   //console.log(img);

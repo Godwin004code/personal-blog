@@ -13,6 +13,7 @@ import Head from "next/head";
 const SingleLearn = ({ data }) => {
   const datas = data.data.attributes;
   const date = new Date(datas.publishedAt).toLocaleDateString()
+  const updated = new Date(datas.updatedAt).toLocaleDateString()
   return (
     <>
       <Head>
@@ -23,7 +24,7 @@ const SingleLearn = ({ data }) => {
       <Nav />
 
       <div id='long_link' className={_styles.long_link}>
-      <Link href='/'><a>Home<span>&raquo;</span></a></Link>  <a>{datas.Project_name}</a>
+      <Link href='/'><a><span style={{color: 'blue'}}>Home</span><span>&raquo;</span></a></Link>  <a>{datas.Project_name}</a>
     </div>
       <h2 id="title" className={__styles.h2}>
         {datas.Project_name}
@@ -44,7 +45,17 @@ const SingleLearn = ({ data }) => {
               <ReactMarkdown rehypePlugins={[rehypeRaw]} >{datas.Project_content}</ReactMarkdown>
             </div>
           </div>
+          <div
+            style={{
+              marginTop: "4rem",
+              fontSize: "1.3rem",
+              marginLeft: "10px",
+            }}
+          >
+            Last Modified: <span>{updated}</span>
+          </div>
         </article>
+        
       </div>
     </>
   );
