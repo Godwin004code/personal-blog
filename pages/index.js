@@ -20,14 +20,7 @@ const index = ({data}) => {
 <link rel='manifest' href='/manifest.json' />
 <link rel='mask-icon' href='/maskable.png' color='rgb(24,24,38)' />
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "13175820-0be9-4f42-9d2a-2eefa73c4bcf",
-    })
-  })
-</script>
+
 <link rel='shortcut icon' href='/20220613_134635.jpg' />
     </Head>
      <Home data={data.data.reverse()}  />

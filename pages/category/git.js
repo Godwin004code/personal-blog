@@ -20,14 +20,7 @@ const js = ({data}) => {
           <title>categories of Git/GitHub</title>
           <meta name="description" content='This is the page that contains all categories that fall under Git/GitHub' />
           <meta name='theme-color' content='#b01100' />
-          <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "13175820-0be9-4f42-9d2a-2eefa73c4bcf",
-    })
-  })
-</script>
+         
       </Head>
       <Nav />
     <div className={_styles.body}> 

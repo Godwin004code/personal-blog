@@ -21,14 +21,7 @@ console.log(filtered);
        <meta name='theme-color' content='#b01100' />
           <title>category of react</title>
           <meta name="description" content='This is the page that we post about all javascript frameworks' />
-          <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "13175820-0be9-4f42-9d2a-2eefa73c4bcf",
-    })
-  })
-</script>
+        
       </Head>
       <Nav />
     <div className={_styles.body}> 
