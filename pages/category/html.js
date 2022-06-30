@@ -8,6 +8,7 @@ import styles from "../../styles/config.module.css"
 import Nav from "../../components/Nav/Nav"
 import Filtered from "../../components/Post/Filtered"
 import Footer from "../../components/Footer/Footer"
+import RightBar from "../../components/Body/RightBar"
 
 
 const js = ({data}) => {
@@ -23,7 +24,7 @@ const js = ({data}) => {
     <div className={_styles.body}> 
     
     <div className={styles.leftbar}>
-      rightbar
+     <RightBar />
     </div>
     <Filtered data={data} text='html' />
     

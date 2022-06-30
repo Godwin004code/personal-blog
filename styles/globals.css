@@ -116,7 +116,7 @@ body.light #contact {
   color: #b01100;
 }
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {

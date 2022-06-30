@@ -145,13 +145,13 @@
     }
 } 
 @media only screen and (max-width: 500px) {
-    .main, .mains {
-        width: 95%;
+    .main, .mains,.maines {
+        width: 98%;
         position: initial;
         margin: 2rem auto;
-        
-        
     }
     
+
+
     
 }

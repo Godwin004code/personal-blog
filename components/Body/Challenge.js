@@ -14,7 +14,7 @@ const Challenge = () => {
    {
     id:2,
     title: 'FE',
-    des: 'Frontend Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse tempora alias, soluta pariatur explicabo maiores velit repellendus! Architecto aliquid nostrum, voluptas consectetur numquam cupiditate doloribus tempora blanditiis velit quidem explicabo.'
+    des: 'Build a Drag and Drop File Uploader where a user can upload an image. Also create a button called browse files if the user is on mobile devices. Lastly,create a box or a div and make the user uploaded image an avatar or profile picture. Check the learn page for solution.'
   },
  ]
 

@@ -46,7 +46,7 @@ const Contact = () => {
                     <div>
                         <input className={styles.input} type="email" placeholder="Email" required/>
                     </div>
-                    <div>error</div>
+                    {/* <div>error</div> */}
                     <button>Send</button>
                 </form>
             </div>

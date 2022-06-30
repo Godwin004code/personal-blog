@@ -146,6 +146,9 @@
     .long_link  a span {
         margin: 0 4px;
     }
+    .posts_contain,.posts_container {
+        width: 95%;
+    }
     .articles {
         width: 100%;
     }

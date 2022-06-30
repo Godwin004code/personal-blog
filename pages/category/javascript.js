@@ -9,6 +9,7 @@ import _styles from "../../styles/Body.module.css"
 import __styles from "../../styles/Leftbar.module.css"
 import styles from "../../styles/config.module.css"
 import Head from "next/head"
+import RightBar from "../../components/Body/RightBar"
 
 
 const js = ({data}) => {
@@ -23,7 +24,7 @@ const js = ({data}) => {
     <Nav />
     <div className={_styles.body}> 
     <div className={styles.leftbar}>
-      rightbar
+     <RightBar />
     </div>
     
     <Filtered data={data} text='JavaScript' />
