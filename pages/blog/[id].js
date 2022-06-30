@@ -38,14 +38,7 @@ const Shock = ({ data, paths }) => {
         <meta name="description" content={`${post.title}`} />
         <meta name="theme-color" content="#b01100" />
         <title>{post.title}</title>
-        <script>
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "13175820-0be9-4f42-9d2a-2eefa73c4bcf",
-    })
-  })
-</script>
+       
       </Head>
       <div>
         <SinglePost
