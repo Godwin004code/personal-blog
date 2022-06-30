@@ -50,6 +50,7 @@ const Shock = ({ data, paths }) => {
           date={_date}
           time={time}
           updatedDate={UpdatedDate}
+          slug={post.slug}
         />
 
         <div className="progress_container">

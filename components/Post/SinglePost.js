@@ -18,6 +18,7 @@ const SinglePost = ({
   time,
   excerpt,
   updatedDate,
+  slug
 }) => {
   return (
     <>
@@ -30,7 +31,7 @@ const SinglePost = ({
           <span style={{color: 'blue'}}>Home</span> <span>&raquo;</span>
           </a>
         </Link>{" "}
-        <Link href={`/category/${category}`}>
+        <Link href={`/category/${slug}`}>
           <a>
           <span style={{color: 'blue'}}> {category}</span> <span>&raquo;</span>
           </a>
