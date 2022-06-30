@@ -18,6 +18,15 @@ const learn = ({data}) => {
     <meta name='theme-color' content='#b01100' />
     <title>Devilon</title>
     <link rel='shortcut icon' href='/20220614_122650.png' />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "13175820-0be9-4f42-9d2a-2eefa73c4bcf",
+    })
+  })
+</script>
     </Head>
     <div className={pstyles.head}>
       <Nav />
