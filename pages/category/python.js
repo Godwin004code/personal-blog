@@ -20,8 +20,7 @@ const js = ({data}) => {
           <title>categories of Python</title>
           <meta name="description" content='This is the page that contains all categories that fall under Python' />
           <meta name='theme-color' content='#b01100' />
-         
-</script>
+
       </Head>
       <Nav />
     <div className={_styles.body}> 
