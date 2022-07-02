@@ -34,7 +34,6 @@ const Slug = ({data, paths}) => {
     <meta name="description" content={`${data.data.attributes.Project_name}`} />
     <meta name='theme-color' content='#b01100' />
     <title>{data.data.attributes.Project_name}</title>
-   
     </Head>
       <Singlelearn data={data} />
         <div className="progress_container">

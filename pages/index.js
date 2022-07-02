@@ -26,6 +26,7 @@ const index = ({data}) => {
      <Home data={data.data.reverse()}  />
    </>
   )
+  
 }
 
 
