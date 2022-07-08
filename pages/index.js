@@ -3,6 +3,7 @@ import Head from "next/head"
 import Home from "../components/Home"
 
 const index = ({data}) => {
+  
   return (
    <>
    <Head>
@@ -19,17 +20,17 @@ const index = ({data}) => {
 <link rel='icon' type='image/png' sizes='16x16' href='/16.png' />
 <link rel='manifest' href='/manifest.json' />
 <link rel='mask-icon' href='/maskable.png' color='rgb(24,24,38)' />
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+
 
 <link rel='shortcut icon' href='/20220613_134635.jpg' />
     </Head>
+    
      <Home data={data.data.reverse()}  />
+    
    </>
   )
   
 }
-
-
 
 export default index
 
