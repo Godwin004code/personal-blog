@@ -5,48 +5,19 @@ import Footer from "../../components/Footer/Footer";
 import styles from "../../styles/Body.module.css";
 import Head from "next/head";
 import {
-  EmailShareButton,
   FacebookShareButton,
-
-  InstapaperShareButton,
-  
-  LinkedinShareButton,
-  MailruShareButton,
-  OKShareButton,
-  PinterestShareButton,
-  PocketShareButton,
-  RedditShareButton,
   TelegramShareButton,
-  TumblrShareButton,
   TwitterShareButton,
-  ViberShareButton,
-  VKShareButton,
   WhatsappShareButton,
-  WorkplaceShareButton
 } from "react-share";
+
 import {
-  EmailIcon,
   FacebookIcon,
-  FacebookMessengerIcon,
-  HatenaIcon,
-  InstapaperIcon,
-  LineIcon,
-  LinkedinIcon,
-  LivejournalIcon,
-  MailruIcon,
-  OKIcon,
-  PinterestIcon,
-  PocketIcon,
-  RedditIcon,
   TelegramIcon,
-  TumblrIcon,
   TwitterIcon,
-  ViberIcon,
-  VKIcon,
-  WeiboIcon,
   WhatsappIcon,
-  WorkplaceIcon
 } from "react-share";
+
 const URL = process.env.STRAPIBASEURL;
 
 const Shock = ({ data, params }) => {
@@ -81,7 +52,8 @@ const Shock = ({ data, params }) => {
         <meta name="description" content={`${post.title}`} />
         <meta name="theme-color" content="#b01100" />
         <title>{post.title}</title>
-       
+        <link rel='icon' type='image/png' sizes='32x32' href='/32.png' />
+<link rel='icon' type='image/png' sizes='16x16' href='/16.png' />
       </Head>
       <div>
         <SinglePost
@@ -105,22 +77,22 @@ const Shock = ({ data, params }) => {
         </div>
       <section className="share-icons">
         <div>
-          <FacebookShareButton url={shareURL}>
+          <FacebookShareButton url={shareURL} title={post.title}>
             <FacebookIcon round={true} sizes={20} />
           </FacebookShareButton>
         </div>
         <div>
-          <WhatsappShareButton url={shareURL}>
+          <WhatsappShareButton url={shareURL} title={post.title}>
             <WhatsappIcon round={true} sizes={20} />
           </WhatsappShareButton>
         </div>
         <div>
-          <TwitterShareButton url={shareURL}>
+          <TwitterShareButton url={shareURL} title={post.title}>
             <TwitterIcon round={true} sizes={20} />
           </TwitterShareButton>
         </div>
         <div>
-          <TelegramShareButton url={shareURL}>
+          <TelegramShareButton url={shareURL} title={post.title}>
             <TelegramIcon round={true} sizes={20} />
           </TelegramShareButton>
         </div>
