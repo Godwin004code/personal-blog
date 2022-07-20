@@ -7,6 +7,7 @@ import __styles from "../../styles/Singlepost.module.css";
 import Link from "next/link";
 import Head from "next/head";
 import rehypeRaw from "rehype-raw";
+import {AiOutlineUser} from "react-icons/ai"
 
 const SinglePost = ({
   img,
@@ -49,7 +50,7 @@ const SinglePost = ({
               <img src={img} alt={title} />
             </div>
             <div id="author" className={__styles.author}>
-              <div>Published By : {author}</div>
+              <div><AiOutlineUser /> : {author}</div>
               <div className={__styles.published_date}>
                 <span>{date}</span>
                 <span>{time}</span>

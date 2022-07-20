@@ -4,6 +4,7 @@ import Image from "next/image"
 import styles from "../../styles/Main.module.css"
 import { FaCalendarAlt, FaClock, FaStar} from "react-icons/fa"
 import ReactMarkdown from "react-markdown"
+import rehypeRaw from "rehype-raw"
 
 const Post = ({id,img,category,title,excerpt,time,_date}) => {
    
@@ -21,7 +22,7 @@ const Post = ({id,img,category,title,excerpt,time,_date}) => {
 
                      <h2 className={styles.h2}>{title}</h2>
                      <article>
-                         <ReactMarkdown>
+                         <ReactMarkdown rehypePlugins={[rehypeRaw]}>
                          {excerpt}
                         </ReactMarkdown>
                      </article>

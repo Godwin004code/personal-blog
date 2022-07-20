@@ -10,7 +10,7 @@ const RightBar = () => {
         <Link href="https://www.buymeacoffee.com/godwinalugR">
         <a>
           <img  src="/bmc_icon_black.png" alt="Buy me a coffee" />
-          <div style={{textDecoration: 'underline'}}>Buy us a coffee. Let's create that YouTube channel.</div>
+          <div style={{textDecoration: 'underline'}}>Buy us a coffee. We now have a YouTube channel.</div>
         </a>
         </Link>
       </div>

@@ -5,6 +5,7 @@ import ReactMarkdown from "react-markdown"
 import styles from "../../styles/Main.module.css"
 
 import _styles from "../../styles/Body.module.css"
+import rehypeRaw from "rehype-raw";
 const Filtered = ({data, text}) => {
     const filtered = data.data.filter((item) => item.attributes.category === text)
 console.log(filtered);
@@ -30,7 +31,7 @@ console.log(filtered);
   
                     <h2 className={styles.h2}>{item.attributes.title}</h2>
                     <p>
-                      <ReactMarkdown>
+                      <ReactMarkdown rehypePlugins={[rehypeRaw]}>
                       {item.attributes.excerpt}
                     </ReactMarkdown >  
                     </p>

@@ -134,8 +134,17 @@ body.light #contact {
             .5px .5px 0 rgba(0, 0, 0, .15),
             0 12px 10px -10px rgba(0, 0, 0, .05);
 }
+.share-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
 
 @media only screen and (max-width: 660px) {
+  .share-icons {
+    width: 90%;
+  }
   #tabh2 {
     font-size: 15px;
     padding: 10px 20px;
@@ -210,3 +219,5 @@ body.light #contact {
   font-size: 20px;
 }
 }
+
+

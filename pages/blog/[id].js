@@ -4,11 +4,54 @@ import { useEffect, useState } from "react";
 import Footer from "../../components/Footer/Footer";
 import styles from "../../styles/Body.module.css";
 import Head from "next/head";
+import {
+  EmailShareButton,
+  FacebookShareButton,
 
+  InstapaperShareButton,
+  
+  LinkedinShareButton,
+  MailruShareButton,
+  OKShareButton,
+  PinterestShareButton,
+  PocketShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  TumblrShareButton,
+  TwitterShareButton,
+  ViberShareButton,
+  VKShareButton,
+  WhatsappShareButton,
+  WorkplaceShareButton
+} from "react-share";
+import {
+  EmailIcon,
+  FacebookIcon,
+  FacebookMessengerIcon,
+  HatenaIcon,
+  InstapaperIcon,
+  LineIcon,
+  LinkedinIcon,
+  LivejournalIcon,
+  MailruIcon,
+  OKIcon,
+  PinterestIcon,
+  PocketIcon,
+  RedditIcon,
+  TelegramIcon,
+  TumblrIcon,
+  TwitterIcon,
+  ViberIcon,
+  VKIcon,
+  WeiboIcon,
+  WhatsappIcon,
+  WorkplaceIcon
+} from "react-share";
 const URL = process.env.STRAPIBASEURL;
 
-const Shock = ({ data, paths }) => {
-  console.log(data);
+const Shock = ({ data, params }) => {
+  console.log(params);
+  const shareURL = `https://devilon.online/blog/${params.id}`
   const [scrolled, setScrolled] = useState(0);
 
   const showProgress = () => {
@@ -60,7 +103,28 @@ const Shock = ({ data, paths }) => {
             className="progress_line"
           ></div>
         </div>
-
+      <section className="share-icons">
+        <div>
+          <FacebookShareButton url={shareURL}>
+            <FacebookIcon round={true} sizes={20} />
+          </FacebookShareButton>
+        </div>
+        <div>
+          <WhatsappShareButton url={shareURL}>
+            <WhatsappIcon round={true} sizes={20} />
+          </WhatsappShareButton>
+        </div>
+        <div>
+          <TwitterShareButton url={shareURL}>
+            <TwitterIcon round={true} sizes={20} />
+          </TwitterShareButton>
+        </div>
+        <div>
+          <TelegramShareButton url={shareURL}>
+            <TelegramIcon round={true} sizes={20} />
+          </TelegramShareButton>
+        </div>
+      </section>
         <div className={styles.footer}>
           <Footer />
         </div>
@@ -91,8 +155,9 @@ export async function getStaticProps({ params }) {
     `http://murmuring-dawn-44285.herokuapp.com/api/posts/${params.id}?populate=*`
   );
   const data = await res.json();
+  console.log(params);
   return {
-    props: { data },
+    props: { data, params },
     revalidate: 10,
   };
 }
