@@ -51,6 +51,10 @@ const Shock = ({ data, params }) => {
       <Head>
         <meta name="description" content={`${post.title}`} />
         <meta name="theme-color" content="#b01100" />
+        <meta property="og:title" content={post.title} />
+        <meta name="description" content={post.content} />
+        <meta property="og:description" content={post.content} />
+        <meta property="og:image" content={post.image} />
         <title>{post.title}</title>
         <link rel='icon' type='image/png' sizes='32x32' href='/32.png' />
 <link rel='icon' type='image/png' sizes='16x16' href='/16.png' />
